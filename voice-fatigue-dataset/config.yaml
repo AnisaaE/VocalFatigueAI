@@ -1,0 +1,91 @@
+keyword_groups:
+  tired_sports:
+    - "post match interview exhausted"
+    - "after match athlete interview tired"
+    - "post fight interview exhausted"
+    - "post run interview out of breath"
+    - "marathon finish interview exhausted"
+    - "athlete out of breath interview"
+    - "ninja warrior heavy breathing"
+    - "ninja warrior exhaustion"
+    - "wwe post match interview exhausted"
+    - "wwe backstage interview tired"
+    - "iron man match post match exhausted"
+
+  tired_sleep:
+    - "72 hours no sleep challenge exhausted"
+    - "100 hours without sleep challenge exhausted"
+    - "no sleep challenge exhausted talking"
+    - "last to fall asleep challenge tired"
+    - "60 hours no sleep challenge"
+    - "sleep deprivation experiment vlog"
+    - "staying awake challenge exhausted"
+
+  tired_mental:
+    - "burnout vlog talking exhausted"
+    - "exam week exhausted vlog"
+    - "finals week burnout talking"
+    - "study burnout talking tired"
+    - "midterm exam exhausted vlog"
+    - "yks vlog yorgun"
+    - "exam vlog tired talking"
+
+  tired_extreme:
+    - "running a marathon without training exhausted"
+    - "running a marathon no experience interview"
+    - "i ran a marathon in 30 days exhausted"
+    - "how long can you walk until your body gives up"
+    - "survive 30 days challenge exhausted"
+    - "7 days buried alive exhausted talking"
+
+  tired_reality:
+    - "igri na volyata challenge exhausted"
+    - "igri na volyata interview tired"
+    - "survivor challenge exhausted interview"
+    - "reality show after challenge exhausted"
+    - "after challenge interview out of breath"
+
+  tired_tr:
+    - "koşu sonrası röportaj yorgun"
+    - "antrenman sonrası konuşma yorgun"
+    - "nefes nefese konuşma spor"
+    - "koşarken konuşmak nefes nefese"
+    - "zorlu antrenman günlüğü yorgun"
+    - "sabahlama challenge yorgun"
+    - "uyumama challenge yorgun"
+    - "uykusuz kaldım yorgun konuşma"
+
+subtitle_match:
+  direct:
+    - "I'm tired"
+    - "I'm exhausted"
+    - "burned out"
+    - "yawning"
+  physical:
+    - "out of breath"
+    - "heavy breathing"
+    - "breathing hard"
+    - "i can't talk"
+    - "give me a second"
+    - "i need a break"
+  sleep:
+    - "no sleep"
+    - "haven't slept"
+    - "sleep deprived"
+  turkish:
+    - "yorgunum"
+    - "nefes nefese"
+    - "uykusuzum"
+
+subtitle_score_threshold: 2
+
+search_mode: "combined"   # "combined" or "per_keyword"
+max_total_videos: 100
+max_videos_per_keyword: 20
+
+segment_duration_seconds: 3
+context_before_seconds: 1.5
+context_after_seconds: 1.5
+
+audio_sample_rate: 16000
+audio_channels: 1

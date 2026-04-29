@@ -1,0 +1,10 @@
+yt-dlp
+pydub
+webrtcvad-wheels
+pandas
+tqdm
+librosa
+soundfile
+numpy
+PyYAML
+pytest

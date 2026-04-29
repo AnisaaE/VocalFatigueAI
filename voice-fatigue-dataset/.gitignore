@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env
+.env.*
+.DS_Store
+data/raw/
+data/candidates/
+data/segments/
+data/labels/
+*.log
