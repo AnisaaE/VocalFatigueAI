@@ -100,7 +100,7 @@ python -m src.cli segment --input data/candidates/subtitle_match --output data/s
 
 ## Metadata
 
-- `data/metadata/videos.csv`: tracks search results, download status, subtitle hits, and candidate type
+- `data/metadata/videos.csv`: tracks `video_id`, `url`, `title`, `keyword_group`, `keyword`, and subtitle hit flags
 - `data/metadata/segments.csv`: tracks extracted speech segments, source audio, timestamps, and review fields
 
 ## Machine learning guidance

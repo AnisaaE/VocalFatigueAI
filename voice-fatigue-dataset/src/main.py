@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import logging
 from pathlib import Path
-from typing import Iterable
 
 from tqdm import tqdm
 
@@ -36,14 +35,8 @@ def download_candidate_video(video_info: dict, subtitles_dir: Path, config: dict
         "title": video_info.get("title"),
         "keyword_group": video_info.get("keyword_group"),
         "keyword": video_info.get("keyword"),
-        "duration": video_info.get("duration"),
-        "uploader": video_info.get("uploader"),
-        "upload_date": video_info.get("upload_date"),
         "has_subtitles": False,
         "subtitle_match_found": False,
-        "downloaded_path": "",
-        "candidate_type": "keyword_only",
-        "error": "",
     }
 
     try:
@@ -57,20 +50,16 @@ def download_candidate_video(video_info: dict, subtitles_dir: Path, config: dict
                 match_info = find_subtitle_match(subtitle_path, subtitle_keywords, threshold)
                 if match_info:
                     record["subtitle_match_found"] = True
-                    record["candidate_type"] = "subtitle_match"
                     output_dir = get_data_path("candidates", "subtitle_match")
                     downloaded_path = output_dir / f"{video_info['video_id']}.wav"
                     download_audio(video_info["url"], downloaded_path)
-                    record["downloaded_path"] = str(downloaded_path)
                     save_subtitle_segment(downloaded_path, match_info["first_match"], config)
                     return record
         output_dir = get_data_path("candidates", "keyword_only")
         downloaded_path = output_dir / f"{video_info['video_id']}.wav"
         download_audio(video_info["url"], downloaded_path)
-        record["downloaded_path"] = str(downloaded_path)
         return record
-    except Exception as exc:
-        record["error"] = str(exc)
+    except Exception:
         logger.exception("Failed to download candidate audio for %s", video_info.get("video_id"))
         return record
 
