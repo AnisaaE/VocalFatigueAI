@@ -55,6 +55,21 @@ keyword_groups:
     - "uyumama challenge yorgun"
     - "uykusuz kaldım yorgun konuşma"
 
+  tired_faint:
+    - "bayılma sahnesi dizi"
+    - "hastane sahnesi yorgun"
+    - "astım krizi sahne"
+    - "karakter bayıldı dizi"
+
+  tired_emotional:
+    - "dizi duygusal sahne yorgun"
+    - "kavga sahnesi dizi"
+    - "veda sahnesi dizi"
+
+  tired_chase:
+    - "kaçma sahnesi nefes nefese"
+    - "polisten kaçma dizi"  
+
 subtitle_match:
   direct:
     - "I'm tired"
